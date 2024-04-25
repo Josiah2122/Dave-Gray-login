@@ -30,7 +30,8 @@ export default function Register() {
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    userRef.current.focus(); //this will set the focus on the username input field
+    // userRef.current.focus(); //this will set the focus on the username input field
+    userRef.current.focus();
   }, []);
 
   useEffect(() => {
@@ -55,15 +56,14 @@ export default function Register() {
 
   return (
     <section>
-      <p
+      {/* <p
         ref={errRef}
         className={errMsg ? "errmsg" : "offscreen"}
         aria-live="assertive"
       >
         {errMsg}
-      </p>
+      </p> */}
       <h1>Register</h1>
-      <form></form>
     </section>
   );
 }
